@@ -1,104 +1,142 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-	<title>YTU Voting System</title>
-	<meta charset="utf-8">
-  	<meta name="viewport" content="width=device-width, initial-scale=1">
-  	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
-  	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-  	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
-  	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+  <title>YTU Voting System</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 </head>
 <body>
-	<div class="container">
 
-			<h3>President</h3>
-			<hr />
-			<div class="btn-group" data-toggle="buttons">
-      				<label class="btn btn-success">
+<div class="container">
+  
+
+  <ul class="nav nav-tabs nav-justified">
+    <li class="active"><a data-toggle="tab" href="#pres">President</a></li>
+    <li><a data-toggle="tab" href="#secr">Secretary</a></li>
+    <li><a data-toggle="tab" href="#lcpr">Literature Club President</a></li>
+    <li><a data-toggle="tab" href="#acpr">Art Club President</a></li>
+  </ul>
+
+  <div class="tab-content text-center">
+    <div id="pres" class="tab-pane fade in active">
+      
+      
+      
+      <br />
+      <div class="btn-group" data-toggle="buttons">
+      				<label class="btn btn-default" style="margin-right:5px;">
        				 	
        				 	<img class="img-fluid" src="images/chit_poat.jpg" alt="Chit Poat" style="width: 150px; height: 150px;"/> <br /> 
-       				 	Chit Poat <input type="radio" name="president" id="" /> 
+       				 	Chit Poat <input type="radio" name="pres" id="" /> 
       				</label>
-      				<label class="btn btn-success">
+                    
+      				<label class="btn btn-default" style="margin-right:5px;">
        				 	
        				 	<img class="img-fluid" src="images/chit_poat.jpg" alt="Chit Poat"  style="width: 150px; height: 150px;" /> <br /> 
-       				 	Chit Poat <input type="radio" name="president" id="" /> 
+       				 	Chit Poat <input type="radio" name="pres" id="" /> 
       				</label>
-      				<label class="btn btn-success">
+                    
+      				<label class="btn btn-default" style="margin-right:5px;">
        				 	
        				 	<img class="img-fluid" src="images/chit_poat.jpg" alt="Chit Poat" style="width: 150px; height: 150px;" /> <br /> 
-       				 	Chit Poat <input type="radio" name="president" id="" /> 
+       				 	Chit Poat <input type="radio" name="pres" id="" /> 
       				</label>
 			</div>
-			<hr />
-
-			<h3>Secretary</h3>
-			<hr />
-			<div class="btn-group" data-toggle="buttons">
-      				<label class="btn btn-info">
+      
+      
+      
+      
+    </div>
+    
+    
+    
+    
+    
+    
+    <div id="secr" class="tab-pane fade">
+     
+    		<br />
+      <div class="btn-group" data-toggle="buttons">
+      				<label class="btn btn-default" style="margin-right:5px;">
        				 	
-       				 	<img class="img-fluid" src="images/chit_poat.jpg" alt="Chit Poat" style="width: 150px; height: 150px;" /> <br /> 
-       				 	Chit Poat <input type="radio" name="president" id="" /> 
+       				 	<img class="img-fluid" src="images/chit_poat.jpg" alt="Chit Poat" style="width: 150px; height: 150px;"/> <br /> 
+       				 	Chit Poat <input type="radio" name="pres" id="" /> 
       				</label>
-      				<label class="btn btn-info">
+                    
+      				<label class="btn btn-default" style="margin-right:5px;">
        				 	
-       				 	<img class="img-fluid" src="images/chit_poat.jpg" alt="Chit Poat" style="width: 150px; height: 150px;" /> <br /> 
-       				 	Chit Poat <input type="radio" name="president" id="" /> 
+       				 	<img class="img-fluid" src="images/chit_poat.jpg" alt="Chit Poat"  style="width: 150px; height: 150px;" /> <br /> 
+       				 	Chit Poat <input type="radio" name="pres" id="" /> 
       				</label>
-      				<label class="btn btn-info">
+                    
+      				<label class="btn btn-default" style="margin-right:5px;">
        				 	
        				 	<img class="img-fluid" src="images/chit_poat.jpg" alt="Chit Poat" style="width: 150px; height: 150px;" /> <br /> 
-       				 	Chit Poat <input type="radio" name="president" id="" /> 
-      				</label>
-			</div>
-			<hr />
-
-			<h3>Literature Club President</h3>
-			<hr />
-			<div class="btn-group" data-toggle="buttons">
-      				<label class="btn btn-warning">
-       				 	
-       				 	<img class="img-fluid" src="images/chit_poat.jpg" alt="Chit Poat" style="width: 150px; height: 150px;" /> <br /> 
-       				 	Chit Poat <input type="radio" name="president" id="" /> 
-      				</label>
-      				<label class="btn btn-warning">
-       				 	
-       				 	<img class="img-fluid" src="images/chit_poat.jpg" alt="Chit Poat" style="width: 150px; height: 150px;" /> <br /> 
-       				 	Chit Poat <input type="radio" name="president" id="" /> 
-      				</label>
-      				<label class="btn btn-danger">
-       				 	
-       				 	<img class="img-fluid" src="images/chit_poat.jpg" alt="Chit Poat" style="width: 150px; height: 150px;" /> <br /> 
-       				 	Chit Poat <input type="radio" name="president" id="" /> 
+       				 	Chit Poat <input type="radio" name="pres" id="" /> 
       				</label>
 			</div>
-			<hr />
+      
+      
 
-			<h3>Art Club President</h3>
-			<hr />
-			<div class="btn-group" data-toggle="buttons">
-      				<label class="btn btn-danger">
+    </div>
+
+    <div id="lcpr" class="tab-pane fade">
+      
+    		<br />
+      <div class="btn-group" data-toggle="buttons">
+      				<label class="btn btn-default" style="margin-right:5px;">
        				 	
-       				 	<img class="img-fluid" src="images/chit_poat.jpg" alt="Chit Poat" style="width: 150px; height: 150px;" /> <br /> 
-       				 	Chit Poat <input type="radio" name="president" id="" /> 
+       				 	<img class="img-fluid" src="images/chit_poat.jpg" alt="Chit Poat" style="width: 150px; height: 150px;"/> <br /> 
+       				 	Chit Poat <input type="radio" name="pres" id="" /> 
       				</label>
-      				<label class="btn btn-danger">
+                    
+      				<label class="btn btn-default" style="margin-right:5px;">
        				 	
-       				 	<img class="img-fluid" src="images/chit_poat.jpg" alt="Chit Poat" style="width: 150px; height: 150px;" /> <br /> 
-       				 	Chit Poat <input type="radio" name="president" id="" /> 
+       				 	<img class="img-fluid" src="images/chit_poat.jpg" alt="Chit Poat"  style="width: 150px; height: 150px;" /> <br /> 
+       				 	Chit Poat <input type="radio" name="pres" id="" /> 
       				</label>
-      				<label class="btn btn-danger">
+                    
+      				<label class="btn btn-default" style="margin-right:5px;">
        				 	
        				 	<img class="img-fluid" src="images/chit_poat.jpg" alt="Chit Poat" style="width: 150px; height: 150px;" /> <br /> 
-       				 	Chit Poat <input type="radio" name="president" id="" /> 
+       				 	Chit Poat <input type="radio" name="pres" id="" /> 
       				</label>
 			</div>
-			<hr />
+      
+      
 
+    </div>
+    <div id="acpr" class="tab-pane fade">
+      
+    	<br />
+      <div class="btn-group" data-toggle="buttons">
+      				<label class="btn btn-default" style="margin-right:5px;">
+       				 	
+       				 	<img class="img-fluid" src="images/chit_poat.jpg" alt="Chit Poat" style="width: 150px; height: 150px;"/> <br /> 
+       				 	Chit Poat <input type="radio" name="pres" id="" /> 
+      				</label>
+                    
+      				<label class="btn btn-default" style="margin-right:5px;">
+       				 	
+       				 	<img class="img-fluid" src="images/chit_poat.jpg" alt="Chit Poat"  style="width: 150px; height: 150px;" /> <br /> 
+       				 	Chit Poat <input type="radio" name="pres" id="" /> 
+      				</label>
+                    
+      				<label class="btn btn-default" style="margin-right:5px;">
+       				 	
+       				 	<img class="img-fluid" src="images/chit_poat.jpg" alt="Chit Poat" style="width: 150px; height: 150px;" /> <br /> 
+       				 	Chit Poat <input type="radio" name="pres" id="" /> 
+      				</label>
+			</div>
+      
+      
+      
+    </div>
+  </div>
+</div>
 
-	</div>
 </body>
 </html>
-
-
