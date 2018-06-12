@@ -26,7 +26,7 @@
       
       
       <br />
-      <div class="btn-group president" data-toggle="buttons">
+      <div class="btn-group" data-toggle="buttons" style="margin: 90px 0 90px 0; ">
       
       				<label class="btn btn-default" style="margin-right:5px;">
        				 	
@@ -60,19 +60,82 @@
     
     <div id="secr" class="tab-pane fade">
      
-    	   
+    	    <br />
+      <div class="btn-group" data-toggle="buttons" style="margin: 90px 0 90px 0; ">
+      
+      				<label class="btn btn-default" style="margin-right:5px;">
+       				 	
+       				 	<img class="img-fluid" src="images/chit_poat2.jpg" alt="Chit Poat" style="width: 250px; height: 250px;"/> <br /> 
+       				 	Chit Poat <input type="radio" name="secr" value="" /> 
+      				</label>
+                    
+      				<label class="btn btn-default" style="margin-right:5px;">
+       				 	
+       				 	<img class="img-fluid" src="images/chit_poat2.jpg" alt="Chit Poat"  style="width: 250px; height: 250px;" /> <br /> 
+       				 	Chit Poat <input type="radio" name="secr" value="" /> 
+      				</label>
+                    
+      				<label class="btn btn-default" style="margin-right:5px;">
+       				 	
+       				 	<img class="img-fluid" src="images/chit_poat2.jpg" alt="Chit Poat" style="width: 250px; height: 250px;" /> <br /> 
+       				 	Chit Poat <input type="radio" name="secr" value="" /> 
+      				</label>
+                   
+			</div>
       
 
     </div>
 
     <div id="lcpr" class="tab-pane fade">
       
-    		
+    		    <br />
+      <div class="btn-group" data-toggle="buttons" style="margin: 90px 0 90px 0; ">
+      
+      				<label class="btn btn-default" style="margin-right:5px;">
+       				 	
+       				 	<img class="img-fluid" src="images/chit_poat.jpg" alt="Chit Poat" style="width: 250px; height: 250px;"/> <br /> 
+       				 	Chit Poat <input type="radio" name="lcpr" value="" /> 
+      				</label>
+                    
+      				<label class="btn btn-default" style="margin-right:5px;">
+       				 	
+       				 	<img class="img-fluid" src="images/chit_poat.jpg" alt="Chit Poat"  style="width: 250px; height: 250px;" /> <br /> 
+       				 	Chit Poat <input type="radio" name="lcpr" value="" /> 
+      				</label>
+                    
+      				<label class="btn btn-default" style="margin-right:5px;">
+       				 	
+       				 	<img class="img-fluid" src="images/chit_poat.jpg" alt="Chit Poat" style="width: 250px; height: 250px;" /> <br /> 
+       				 	Chit Poat <input type="radio" name="lcpr" value="" /> 
+      				</label>
+                   
+			</div>
 
     </div>
     <div id="acpr" class="tab-pane fade">
       
-    	
+    	    <br />
+      <div class="btn-group" data-toggle="buttons" style="margin: 90px 0 90px 0; ">
+      
+      				<label class="btn btn-default" style="margin-right:5px;">
+       				 	
+       				 	<img class="img-fluid" src="images/chit_poat2.jpg" alt="Chit Poat" style="width: 250px; height: 250px;"/> <br /> 
+       				 	Chit Poat <input type="radio" name="acpr" value="" /> 
+      				</label>
+                    
+      				<label class="btn btn-default" style="margin-right:5px;">
+       				 	
+       				 	<img class="img-fluid" src="images/chit_poat2.jpg" alt="Chit Poat"  style="width: 250px; height: 250px;" /> <br /> 
+       				 	Chit Poat <input type="radio" name="acpr" value="" /> 
+      				</label>
+                    
+      				<label class="btn btn-default" style="margin-right:5px;">
+       				 	
+       				 	<img class="img-fluid" src="images/chit_poat2.jpg" alt="Chit Poat" style="width: 250px; height: 250px;" /> <br /> 
+       				 	Chit Poat <input type="radio" name="acpr" value="" /> 
+      				</label>
+                   
+			</div>
 
     </div>
     
@@ -80,10 +143,32 @@
   
   
   <br />
-  <button type="button" class="btn btn-success btn-block">Vote</button> 
+  <button type="button" class="btn btn-success btn-block btn-lg" id="vote" disabled>Vote</button> 
   <hr />
 </div>
 
 </body>
+
+<script>
+	$(document).ready(function() {
+
+     var c1 = $('input[name=pres]');
+     var c2 = $('input[name=secr]');
+     var c3 = $('input[name=lcpr]');
+     var c4 = $('input[name=acpr]');
+
+     validate();
+
+     $("input[type='radio']").change(validate);
+
+     function validate() {
+         if ($(c1).is(':checked') && $(c2).is(':checked') && $(c3).is(':checked') && $(c4).is(':checked')) {
+             $(".btn#vote").removeAttr("disabled", false);
+         } else {
+             $(".btn#vote").attr("disabled", true);
+         }
+     }
+});
+</script>
 
 </html>
