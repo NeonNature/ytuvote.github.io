@@ -31,13 +31,13 @@ include('connect.php');
 
 <div class="container">
 	<ul class="nav nav-tabs nav-justified">
-  <li ><a data-toggle="tab" href="#donuttab">Donut</a></li>
-  <li class="active"><a data-toggle="tab" href="#bartab">Horizontal Bar</a></li>
+  <li  class="active"><a data-toggle="tab" href="#donuttab">Donut</a></li>
+  <li><a data-toggle="tab" href="#bartab">Horizontal Bar</a></li>
 </ul>
 
 
   <div class="tab-content">
-  <div id="donuttab" class="tab-pane fade in ">
+  <div id="donuttab" class="tab-pane fade in active">
   
       	<div class="row">
   			<div class="col-sm-6">   
@@ -59,29 +59,30 @@ include('connect.php');
 		<hr />
 	
 	</div>
-	<div id="bartab" class="tab-pane fade in active">
-  
-      	<div class="row">
-  			<div class="col-sm-6">   
+	<div id="bartab" class="tab-pane fade in">
+		<br />
+     <div class="row">
+     	<div class="col-md-6">
         		<canvas id="presB" width="250" height="250"></canvas>
-			</div>
-			<div class="col-sm-6">   
+		</div>
+		<div class="col-md-6">	  
         		<canvas id="secrB" width="250" height="250"></canvas>
-			</div>
-		</div>  
+		</div>
+	</div>
 		<hr />
 		<div class="row">
-  			<div class="col-sm-6">   
+     	<div class="col-md-6">
         		<canvas id="lcprB" width="250" height="250"></canvas>
-			</div>
-			<div class="col-sm-6">   
+		 </div>
+     	<div class="col-md-6">
         		<canvas id="acprB" width="250" height="250"></canvas>
 			</div>
 		</div>
 		<hr />
 	
+	
 	</div>
-	</div>
+</div>
 </div>
 </body>
 
@@ -191,6 +192,7 @@ var D4 = new Chart(document.getElementById("acprD"), {
       ]
     },
     options: {
+    	legend: { display: false },
     	maintainAspectRatio: false,
       title: {
         display: true,
@@ -217,7 +219,7 @@ var B1 = new Chart(document.getElementById("presB"), {
       ]
     },
     options: {
-    	maintainAspectRatio: false,
+    	//maintainAspectRatio: false,
     	responsive: true,
     	 legend: { display: false },
 
@@ -243,7 +245,7 @@ var B2 = new Chart(document.getElementById("secrB"), {
       ]
     },
     options: {
-    	maintainAspectRatio: false,
+    	//maintainAspectRatio: false,
     	responsive: true,
     	 legend: { display: false },
 
@@ -270,7 +272,7 @@ var B3 = new Chart(document.getElementById("lcprB"), {
       ]
     },
     options: {
-    	maintainAspectRatio: false,
+    	//maintainAspectRatio: false,
 responsive: true,
  legend: { display: false },
 
@@ -298,7 +300,7 @@ var B4 = new Chart(document.getElementById("acprB"), {
     options: {
     	 legend: { display: false },
 
-    	maintainAspectRatio: false,
+    	//maintainAspectRatio: false,
     	responsive: true,
       title: {
         display: true,
